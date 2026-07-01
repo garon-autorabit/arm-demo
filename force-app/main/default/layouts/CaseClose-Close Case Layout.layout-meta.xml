@@ -19,12 +19,8 @@
                 <field>Comments</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Product__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Case_Category__c</field>
+                <behavior>Required</behavior>
+                <field>CurrencyIsoCode</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>

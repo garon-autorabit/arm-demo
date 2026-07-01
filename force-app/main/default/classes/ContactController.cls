@@ -1,0 +1,30 @@
+public with sharing class ContactController {
+    public ContactController() {
+        //empty contstructor
+    }
+
+    @AuraEnabled(cacheable=true)
+    public static List<Contact> getAllContact() {
+        return [SELECT Id, FirstName, LastName, Email FROM Contact];
+    }
+
+    @AuraEnabled(cacheable=true)
+    public static List<Contact> getContactByEmail(String email) {
+        return [SELECT Id, FirstName, LastName, Email FROM Contact WHERE Email = :email];
+    }
+
+    @AuraEnabled(cacheable=true)
+    public static List<Contact> getContactsByState(String state) {
+        List<Contact> opps = Database.query(
+            'SELECT Id, FirstName, LastName, Email, MailingState FROM Contact WHERE MailingState = :state'
+        );
+        List<Account> accounts = [
+        SELECT Id, Name, Active__c, Notes__c
+        FROM Account
+        WHERE Active__c = 'Yes'
+        ];
+        return opps;
+        
+    }
+
+}

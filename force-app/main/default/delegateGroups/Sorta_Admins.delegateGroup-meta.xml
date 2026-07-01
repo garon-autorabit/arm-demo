@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DelegateGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customObjects>House</customObjects>
+    <customObjects>Product</customObjects>
+    <customObjects>Project</customObjects>
+    <customObjects>ScoreCard</customObjects>
+    <customObjects>Review</customObjects>
+    <label>Sorta_Admins</label>
+    <loginAccess>false</loginAccess>
+    <permissionSetGroups>HasAPIPS</permissionSetGroups>
+    <permissionSets>API Enabled</permissionSets>
+    <permissionSets>ActorCASCPermSet</permissionSets>
+    <permissionSets>Agentic Near Core CRM</permissionSets>
+    <permissionSets>Agentic Near Core Marketing</permissionSets>
+    <permissionSets>Agentic Near Core Personalization</permissionSets>
+    <profiles>Standard Platform User</profiles>
+    <profiles>Solution Manager</profiles>
+    <roles>CEO</roles>
+</DelegateGroup>

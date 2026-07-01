@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TransactionSecurityPolicy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <action>
+        <block>false</block>
+        <endSession>false</endSession>
+        <freezeUser>false</freezeUser>
+        <notifications>
+            <inApp>true</inApp>
+            <sendEmail>false</sendEmail>
+            <user>vitaliy.sergeychik.2@gmail.com</user>
+        </notifications>
+        <twoFactorAuthentication>false</twoFactorAuthentication>
+    </action>
+    <active>true</active>
+    <developerName>Notifymeofauserloginon</developerName>
+    <eventName>LoginEvent</eventName>
+    <flow>PolicyCondition_AMbEFHdevfoqENZXcFYE</flow>
+    <masterLabel>Notify me of a user login on</masterLabel>
+    <type>CustomConditionBuilderPolicy</type>
+</TransactionSecurityPolicy>
